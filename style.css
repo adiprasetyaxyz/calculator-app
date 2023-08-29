@@ -1,13 +1,17 @@
 .container {
-    width: 100%;
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    background: rgb(191,145,255);
+background: linear-gradient(3deg, rgba(191,145,255,1) 0%, rgba(67,68,231,1) 61%, rgba(28,62,217,1) 85%);
+margin: 0;
+background-size: contain;
 }
 
 .calculator {
-    background-color: grey;
+    background-color: rgba(20, 19, 26, 0.50);  
+    backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
 }
@@ -16,14 +20,16 @@
     border: 0;
     width: 60px;
     height: 60px;
-    border-radius: 5px;
+    border-radius: 50px;
     font-size: 20px;
-    color: white;
-    margin: 10px;
-    background-color: rgb(72, 68, 87);
+    color: white;   
+    margin: 5px;
+    background-color: rgba(59, 53, 82, 0.70);
 
 }
-
+.calculator form input:active {
+    background-color: gray;
+}
 form .display {
     display: flex;
     justify-content: flex-end;
@@ -38,5 +44,12 @@ form .display input{
 }
 
 form input.equal {
-    width: 145px;
+    width: 130px;
 }
+
+form input.operator {
+    background-color: rgba(236, 112, 30, 0.70);
+    color: white;
+    
+}
+
